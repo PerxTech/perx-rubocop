@@ -1,8 +1,9 @@
-require "perx/rubocop/version"
+# frozen_string_literal: true
+
+require 'perx/rubocop/version'
 
 module Perx
   module Rubocop
-    class Error < StandardError; end
-    # Your code goes here...
+    # Nothing need here for now
   end
 end
