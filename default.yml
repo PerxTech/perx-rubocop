@@ -26,6 +26,7 @@ Metrics/BlockLength:
     - '**/spec/policies/**/*.rb'
     - '**/spec/requests/**/*.rb'
     - '**/spec/operations/**/*.rb'
+    - '**/spec/factories/**/*.rb'
 AllCops:
   Exclude:
     - '**/schema.rb'
