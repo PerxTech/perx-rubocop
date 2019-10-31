@@ -12,14 +12,14 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Perx's Rubocop Configuration"
   spec.description   = "Use this to load the default rubocop configuration and inehrit from it"
-  spec.homepage      = "https://github.com/orgs/PerxTech/"
+  spec.homepage      = "https://github.com/PerxTech/perx-rubocop"
   spec.license       = 'MIT'
 
   spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = "https://github.com/orgs/PerxTech/"
-  spec.metadata['changelog_uri'] = "https://github.com/orgs/PerxTech/"
+  spec.metadata['source_code_uri'] = "https://github.com/PerxTech/perx-rubocop"
+  spec.metadata['changelog_uri'] = "https://github.com/PerxTech/perx-rubocop/blob/master/README.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
