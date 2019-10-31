@@ -10,7 +10,7 @@ Rails/NotNullColumn:
 Rails/Output:
   Exclude:
     - '**/rails_helper.rb'
-Ros/RedundantFactoryBot:
+Perx/RedundantFactoryBot:
   Include:
     - '**/spec/**/*.rb'
 Metrics/LineLength:
@@ -37,5 +37,3 @@ AllCops:
     - '**/Guardfile'
     - '**/Rakefile'
     - '**/Gemfile'
-    - '**/sqs_test.rb'
-    - '.github/**/*'

@@ -2,7 +2,7 @@
 
 module RuboCop
   module Cop
-    module Ros
+    module Perx
       class RedundantFactoryBot < RuboCop::Cop::Cop
         MSG = 'Exclude FactoryBot classname when creating/building records'
         FACTORY_BOT_METHODS = %i[create build build_stubbed].freeze
