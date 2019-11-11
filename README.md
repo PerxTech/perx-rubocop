@@ -1,8 +1,8 @@
-# Perx::Rubocop
+# perx-rubocop
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/perx/rubocop`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+perx-rubocop is, as the name suggests, Perx's rubocop default configuration.
+Using this gem allows us to ensure that different projects follow the same
+standards and rely on the same rubocop version, improving the consistency.
 
 ## Installation
 
@@ -22,7 +22,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Once this gem is part of your gem list, you already have rubocop and
+rubocop-rails installed as these are dependencies of perx-rubocop. The only
+thing left to do is to update your rubocop.yml file to look like this:
+
+```
+inherit_gem:
+  perx-rubocop:
+    - default.yml
+```
+
+This will inherit all the perx-rubocop configurations. In case you need to
+overwrite any of the rules, the file behaves the same as before.
 
 ## Development
 
@@ -32,7 +43,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/perx-rubocop. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/PerxTech/perx-rubocop. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -40,4 +51,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Perx::Rubocop project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/perx-rubocop/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Perx::Rubocop project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/PerxTech/perx-rubocop/blob/master/CODE_OF_CONDUCT.md).
