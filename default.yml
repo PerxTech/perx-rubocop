@@ -27,6 +27,9 @@ Metrics/BlockLength:
     - '**/spec/requests/**/*.rb'
     - '**/spec/operations/**/*.rb'
     - '**/spec/factories/**/*.rb'
+Rails/Exit:
+  Exclude:
+    - ./**/spec/rails_helper.rb
 AllCops:
   Exclude:
     - '**/schema.rb'
