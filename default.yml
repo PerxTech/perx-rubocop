@@ -22,10 +22,7 @@ Style/SingleLineMethods:
 Metrics/BlockLength:
   Exclude:
     - '**/db/seeds/**/*.rb'
-    - '**/spec/models/**/*.rb'
-    - '**/spec/policies/**/*.rb'
-    - '**/spec/requests/**/*.rb'
-    - '**/spec/operations/**/*.rb'
+    - '**/spec/**/*_spec.rb'
     - '**/spec/factories/**/*.rb'
 Rails/Exit:
   Exclude:
