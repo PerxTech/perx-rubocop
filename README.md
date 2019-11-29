@@ -35,6 +35,47 @@ inherit_gem:
 This will inherit all the perx-rubocop configurations. In case you need to
 overwrite any of the rules, the file behaves the same as before.
 
+### I want to override something
+
+Simply update your rubocop.yml with your new rule. Take in account that
+the default mode is overriding the rule and not add to the existing rules.
+
+E.g
+
+perx-rubocop defines:
+
+```
+Metrics/BlockLength:
+  Exclude:
+    - '**/db/seeds/**/*.rb'
+    - '**/spec/**/*_spec.rb'
+    - '**/spec/factories/**/*.rb'
+```
+
+If you were to write in your project's rubocop.yml
+
+```
+Metrics/BlockLength:
+  Exclude:
+    - '**/something/**.rb'
+```
+
+This would simply override the previously defined behaviour.
+If you want to add to the existing list of files, you should as well define
+the merge policy in your rubocop.yml. There are other merge possibilities and
+you should look at [rubocop's documentation](https://github.com/rubocop-hq/rubocop/blob/master/manual/configuration.md#merging-arrays-using-inherit_mode)
+for more info.
+
+```
+inherit_mode:
+  merge:
+    - Exclude
+
+Metrics/BlockLength:
+  Exclude:
+    - '**/something/**.rb'
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
